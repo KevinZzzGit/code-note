@@ -235,5 +235,36 @@ git log
 cat .gitignore
 ```
 
+## Git提交规范
 
+- commit message
+
+  ```bash
+  git commit -m "message"
+  ```
+
+  | 字符     | 描述                                                      |
+  | -------- | --------------------------------------------------------- |
+  | feat     | 新功能（feature）                                         |
+  | fix      | 修补bug。                                                 |
+  | docs     | 只改动了文档相关的内容（documentation）                   |
+  | style    | 代码格式（不影响代码运行的变动）                          |
+  | build    | 构造工具的或者外部依赖的改动，例如webpack，npm            |
+  | refactor | 代码重构，既不修复错误也不添加功能                        |
+  | revert   | 执行git revert打印的message，commit 回退                  |
+  | perf     | 性能优化（Performance improvement）                       |
+  | test     | 测试方便的改动                                            |
+  | ci       | 与持续集成服务有关的改动                                  |
+  | chore    | 不修改src或者test的其余修改，例如构建过程或辅助工具的变动 |
+
+- [Conventional Commits]([Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/))
+
+  ```bash
+  // todo 结合husky等进行校验，学懂了再来补充
+  git commit
+  ```
+
+  
+
+  
 
