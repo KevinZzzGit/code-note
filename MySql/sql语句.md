@@ -1,7 +1,4 @@
-<<<<<<< HEAD
 # sql指令
-
-
 
 ## MySql服务
 
@@ -654,4 +651,3 @@ CREATE TABLE 'table_name' INSERT ( id INT NOT NULL AUTO_INCREMENT)
 CREATE TABLE 'table_name' INSERT ( id INT NOT NULL AUTO_INCREMENT)
 auto_increment = 'startValue'
 ```
->>>>>>> daeed8d3e7577c50dae1accbaaff1401aa6bfa2c
