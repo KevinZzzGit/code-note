@@ -8,7 +8,7 @@ Vue (发音为 /vjuː/，类似 **view**) 是一款用于构建用户界面的 J
 
 - CDN
 
-  ```js
+  ```html
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
   ```
 
@@ -421,15 +421,3 @@ export default {
   - :deep伪类
   - :slotted(div)插槽选择器
   - lang预处理器
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
