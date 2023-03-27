@@ -367,9 +367,9 @@ export default {
     // 在组件因为一个响应式状态变更而更新其 DOM 树之后调用。
     updated(){},
     // 在一个组件实例被卸载之前调用。
-    beforeUnmount(){},
+    beforeDestory(){},
     // 在一个组件实例被卸载之后调用。
-    unmounted(){},
+    destroy(){},
     // 在捕获了后代组件传递的错误时调用。
     errorCaptured(err,instance,info){},
     // 若组件实例是 <KeepAlive> 缓存树的一部分，当组件被插入到 DOM 中时调用。
@@ -379,7 +379,7 @@ export default {
     // 当组件实例在服务器上被渲染之前要完成的异步函数。返回Promise
     serverPrefetch(){},
         
-    // 渲染模板,优先渲染render
+    // 渲染模板,render函数优先级大于<template>
     render:h=>h('<h1>title<h1>')
 }
 </script>
@@ -405,6 +405,8 @@ export default {
 
 - set()
 
+- delete()
+
 - directive()
 
 - use()
@@ -415,9 +417,18 @@ export default {
 
 - once()
 
+- observable
+
+  将数据变成响应式数据
+
+- filter
+
+- prototype
+
 ## Style部分
 
   - scoped属性
   - :deep伪类
   - :slotted(div)插槽选择器
   - lang预处理器
+
